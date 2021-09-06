@@ -1,0 +1,169 @@
+2021-09-05 10:19:57,720 INFO    MainThread:17190 [internal.py:wandb_internal():86] W&B internal server running at pid: 17190, started at: 2021-09-05 10:19:57.719913
+2021-09-05 10:19:57,721 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: check_version
+2021-09-05 10:19:57,721 INFO    WriterThread:17190 [datastore.py:open_for_write():77] open: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/run-t6lkqcux.wandb
+2021-09-05 10:19:57,723 DEBUG   SenderThread:17190 [sender.py:send():182] send: header
+2021-09-05 10:19:57,723 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: check_version
+2021-09-05 10:19:58,073 DEBUG   SenderThread:17190 [sender.py:send():182] send: run
+2021-09-05 10:19:58,093 INFO    SenderThread:17190 [sender.py:_maybe_setup_resume():421] checking resume status for None/YOLOv5/t6lkqcux
+2021-09-05 10:19:58,522 INFO    SenderThread:17190 [dir_watcher.py:__init__():169] watching files in: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files
+2021-09-05 10:19:58,523 INFO    SenderThread:17190 [sender.py:_start_run_threads():740] run started: t6lkqcux with start time 1630851596
+2021-09-05 10:19:58,523 DEBUG   SenderThread:17190 [sender.py:send():182] send: summary
+2021-09-05 10:19:58,524 INFO    SenderThread:17190 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 10:19:58,526 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: run_start
+2021-09-05 10:19:59,534 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-summary.json
+2021-09-05 10:20:00,874 DEBUG   HandlerThread:17190 [meta.py:__init__():40] meta init
+2021-09-05 10:20:00,875 DEBUG   HandlerThread:17190 [meta.py:__init__():54] meta init done
+2021-09-05 10:20:00,875 DEBUG   HandlerThread:17190 [meta.py:probe():211] probe
+2021-09-05 10:20:00,876 DEBUG   HandlerThread:17190 [meta.py:_setup_git():201] setup git
+2021-09-05 10:20:00,916 DEBUG   HandlerThread:17190 [meta.py:_setup_git():208] setup git done
+2021-09-05 10:20:00,916 DEBUG   HandlerThread:17190 [meta.py:_save_pip():58] save pip
+2021-09-05 10:20:00,917 DEBUG   HandlerThread:17190 [meta.py:_save_pip():72] save pip done
+2021-09-05 10:20:00,917 DEBUG   HandlerThread:17190 [meta.py:probe():249] probe done
+2021-09-05 10:20:00,922 DEBUG   SenderThread:17190 [sender.py:send():182] send: files
+2021-09-05 10:20:00,923 INFO    SenderThread:17190 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-05 10:20:00,928 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:00,928 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:01,059 DEBUG   SenderThread:17190 [sender.py:send():182] send: config
+2021-09-05 10:20:01,544 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/requirements.txt
+2021-09-05 10:20:01,545 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:20:01,546 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-metadata.json
+2021-09-05 10:20:01,570 INFO    Thread-11 :17190 [upload_job.py:push():137] Uploaded file /var/folders/t2/cm2qpn65743dkntcmvkqkc0r0000gn/T/tmpukfbc5rnwandb/38jw5cz3-wandb-metadata.json
+2021-09-05 10:20:03,547 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:20:13,580 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:20:16,063 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:16,064 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:28,628 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/config.yaml
+2021-09-05 10:20:29,682 DEBUG   SenderThread:17190 [sender.py:send():182] send: stats
+2021-09-05 10:20:31,211 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:31,212 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:45,692 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:20:46,410 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:46,411 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:59,743 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:00,494 DEBUG   SenderThread:17190 [sender.py:send():182] send: stats
+2021-09-05 10:21:01,623 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:01,623 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:21:16,814 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:16,815 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:21:31,467 DEBUG   SenderThread:17190 [sender.py:send():182] send: stats
+2021-09-05 10:21:32,030 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:32,030 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:21:37,904 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:43,928 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:47,229 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:47,230 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:21:54,335 WARNING MainThread:17190 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-09-05 10:21:57,984 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:58,446 DEBUG   SenderThread:17190 [sender.py:send():182] send: telemetry
+2021-09-05 10:21:58,454 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:58,453 DEBUG   SenderThread:17190 [sender.py:send():182] send: exit
+2021-09-05 10:21:58,461 INFO    SenderThread:17190 [sender.py:send_exit():291] handling exit code: 255
+2021-09-05 10:21:58,509 INFO    SenderThread:17190 [sender.py:send_exit():293] handling runtime: 119
+2021-09-05 10:21:58,514 INFO    SenderThread:17190 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 10:21:58,520 INFO    SenderThread:17190 [sender.py:send_exit():303] send defer
+2021-09-05 10:21:58,523 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:58,530 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,531 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 0
+2021-09-05 10:21:58,534 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,538 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 0
+2021-09-05 10:21:58,538 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 1
+2021-09-05 10:21:58,539 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,540 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 1
+2021-09-05 10:21:58,554 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,555 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 1
+2021-09-05 10:21:58,555 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 2
+2021-09-05 10:21:58,556 DEBUG   SenderThread:17190 [sender.py:send():182] send: stats
+2021-09-05 10:21:58,558 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,558 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 2
+2021-09-05 10:21:58,560 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,561 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 2
+2021-09-05 10:21:58,561 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 3
+2021-09-05 10:21:58,562 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,563 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 3
+2021-09-05 10:21:58,564 DEBUG   SenderThread:17190 [sender.py:send():182] send: summary
+2021-09-05 10:21:58,565 INFO    SenderThread:17190 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 10:21:58,566 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,567 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 3
+2021-09-05 10:21:58,567 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 4
+2021-09-05 10:21:58,568 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,568 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 4
+2021-09-05 10:21:58,569 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,569 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 4
+2021-09-05 10:21:58,646 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:58,976 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 5
+2021-09-05 10:21:58,976 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:58,979 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:58,980 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 5
+2021-09-05 10:21:58,982 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:58,983 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 5
+2021-09-05 10:21:58,983 INFO    SenderThread:17190 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-09-05 10:21:58,985 INFO    Thread-8  :17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-summary.json
+2021-09-05 10:21:58,988 INFO    SenderThread:17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:58,989 INFO    SenderThread:17190 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/config.yaml
+2021-09-05 10:21:58,996 INFO    SenderThread:17190 [dir_watcher.py:finish():313] scan: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files
+2021-09-05 10:21:58,997 INFO    SenderThread:17190 [dir_watcher.py:finish():327] scan save: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/requirements.txt requirements.txt
+2021-09-05 10:21:59,000 INFO    SenderThread:17190 [dir_watcher.py:finish():327] scan save: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log output.log
+2021-09-05 10:21:59,001 INFO    SenderThread:17190 [dir_watcher.py:finish():327] scan save: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/config.yaml config.yaml
+2021-09-05 10:21:59,011 INFO    SenderThread:17190 [dir_watcher.py:finish():327] scan save: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-summary.json wandb-summary.json
+2021-09-05 10:21:59,029 INFO    SenderThread:17190 [dir_watcher.py:finish():327] scan save: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-metadata.json wandb-metadata.json
+2021-09-05 10:21:59,037 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 6
+2021-09-05 10:21:59,043 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:21:59,050 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 6
+2021-09-05 10:21:59,060 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:21:59,062 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 6
+2021-09-05 10:21:59,063 INFO    SenderThread:17190 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-05 10:21:59,084 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,085 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,189 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,190 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,305 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,308 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,420 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,421 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,529 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,530 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,634 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,635 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,742 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,742 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,808 INFO    Thread-14 :17190 [upload_job.py:push():137] Uploaded file /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/config.yaml
+2021-09-05 10:21:59,846 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,847 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:21:59,858 INFO    Thread-12 :17190 [upload_job.py:push():137] Uploaded file /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/requirements.txt
+2021-09-05 10:21:59,878 INFO    Thread-15 :17190 [upload_job.py:push():137] Uploaded file /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/wandb-summary.json
+2021-09-05 10:21:59,930 INFO    Thread-13 :17190 [upload_job.py:push():137] Uploaded file /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/files/output.log
+2021-09-05 10:21:59,952 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:21:59,953 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:22:00,056 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:22:00,056 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:22:00,132 INFO    Thread-7  :17190 [sender.py:transition_state():316] send defer: 7
+2021-09-05 10:22:00,132 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:22:00,132 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 7
+2021-09-05 10:22:00,133 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:22:00,133 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 7
+2021-09-05 10:22:00,161 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:22:00,322 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 8
+2021-09-05 10:22:00,322 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:22:00,323 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:22:00,323 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 8
+2021-09-05 10:22:00,323 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:22:00,324 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 8
+2021-09-05 10:22:00,326 INFO    SenderThread:17190 [sender.py:transition_state():316] send defer: 9
+2021-09-05 10:22:00,327 DEBUG   SenderThread:17190 [sender.py:send():182] send: final
+2021-09-05 10:22:00,327 DEBUG   SenderThread:17190 [sender.py:send():182] send: footer
+2021-09-05 10:22:00,327 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: defer
+2021-09-05 10:22:00,327 INFO    HandlerThread:17190 [handler.py:handle_request_defer():143] handle defer: 9
+2021-09-05 10:22:00,327 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: defer
+2021-09-05 10:22:00,327 INFO    SenderThread:17190 [sender.py:send_request_defer():312] handle sender defer: 9
+2021-09-05 10:22:00,429 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: poll_exit
+2021-09-05 10:22:00,430 DEBUG   SenderThread:17190 [sender.py:send_request():196] send_request: poll_exit
+2021-09-05 10:22:00,431 INFO    SenderThread:17190 [file_pusher.py:join():182] waiting for file pusher
+2021-09-05 10:22:00,434 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: get_summary
+2021-09-05 10:22:00,435 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: sampled_history
+2021-09-05 10:22:00,437 DEBUG   HandlerThread:17190 [handler.py:handle_request():126] handle_request: shutdown
+2021-09-05 10:22:00,437 INFO    HandlerThread:17190 [handler.py:finish():683] shutting down handler
+2021-09-05 10:22:01,331 INFO    WriterThread:17190 [datastore.py:close():281] close: /Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/wandb/run-20210905_101956-t6lkqcux/run-t6lkqcux.wandb
+2021-09-05 10:22:01,432 INFO    SenderThread:17190 [sender.py:finish():979] shutting down sender
+2021-09-05 10:22:01,433 INFO    SenderThread:17190 [file_pusher.py:finish():177] shutting down file pusher
+2021-09-05 10:22:01,433 INFO    SenderThread:17190 [file_pusher.py:join():182] waiting for file pusher
+2021-09-05 10:22:01,453 INFO    MainThread:17190 [internal.py:handle_exit():76] Internal process exited

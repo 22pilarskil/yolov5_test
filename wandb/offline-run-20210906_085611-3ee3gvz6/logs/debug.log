@@ -1,0 +1,27 @@
+2021-09-06 08:56:11,079 INFO    MainThread:97286 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-06 08:56:11,079 INFO    MainThread:97286 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-06 08:56:11,079 INFO    MainThread:97286 [wandb_setup.py:_flush():69] setting login settings: {'mode': 'offline'}
+2021-09-06 08:56:11,079 INFO    MainThread:97286 [wandb_init.py:_log_setup():336] Logging user logs to /Users/michaelpilarski/Desktop/yolov5/wandb/offline-run-20210906_085611-3ee3gvz6/logs/debug.log
+2021-09-06 08:56:11,080 INFO    MainThread:97286 [wandb_init.py:_log_setup():337] Logging internal logs to /Users/michaelpilarski/Desktop/yolov5/wandb/offline-run-20210906_085611-3ee3gvz6/logs/debug-internal.log
+2021-09-06 08:56:11,081 INFO    MainThread:97286 [wandb_init.py:init():369] calling init triggers
+2021-09-06 08:56:11,081 INFO    MainThread:97286 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '', 'data': 'data/train_data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 3, 'batch_size': 16, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'local_rank': -1, 'freeze': 0, 'patience': 30, 'save_dir': 'runs/train/exp7'}
+2021-09-06 08:56:11,081 INFO    MainThread:97286 [wandb_init.py:init():418] starting backend
+2021-09-06 08:56:11,082 INFO    MainThread:97286 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-09-06 08:56:11,113 INFO    MainThread:97286 [backend.py:ensure_launched():132] starting backend process...
+2021-09-06 08:56:11,129 INFO    MainThread:97286 [backend.py:ensure_launched():136] started backend process with pid: 97308
+2021-09-06 08:56:11,135 INFO    MainThread:97286 [wandb_init.py:init():423] backend started and connected
+2021-09-06 08:56:11,160 INFO    MainThread:97286 [wandb_init.py:init():465] updated telemetry
+2021-09-06 08:56:11,165 INFO    MainThread:97286 [wandb_init.py:init():522] starting run threads in backend
+2021-09-06 08:56:16,172 INFO    MainThread:97286 [wandb_run.py:_console_start():1565] atexit reg
+2021-09-06 08:56:16,173 INFO    MainThread:97286 [wandb_run.py:_redirect():1412] redirect: SettingsConsole.REDIRECT
+2021-09-06 08:56:16,174 INFO    MainThread:97286 [wandb_run.py:_redirect():1417] Redirecting console.
+2021-09-06 08:56:16,176 INFO    MainThread:97286 [wandb_run.py:_redirect():1479] Redirects installed.
+2021-09-06 08:56:16,176 INFO    MainThread:97286 [wandb_init.py:init():546] run started, returning control to user process
+2021-09-06 08:56:16,189 INFO    MainThread:97286 [wandb_run.py:_atexit_cleanup():1535] got exitcode: 1
+2021-09-06 08:56:16,189 INFO    MainThread:97286 [wandb_run.py:_restore():1507] restore
+2021-09-06 08:56:19,789 INFO    MainThread:97286 [wandb_run.py:_wait_for_finish():1657] got exit ret: 
+2021-09-06 08:56:19,896 INFO    MainThread:97286 [wandb_run.py:_wait_for_finish():1657] got exit ret: done: true
+exit_result {
+}
+

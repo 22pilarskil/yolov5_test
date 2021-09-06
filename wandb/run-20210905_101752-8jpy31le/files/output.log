@@ -1,0 +1,18 @@
+
+WARNING: Dataset not found, nonexistent paths: ['/Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/train_data/images/val']
+Traceback (most recent call last):
+  File "train.py", line 610, in <module>
+    main(opt)
+  File "train.py", line 508, in main
+    train(opt.hyp, opt, device)
+  File "train.py", line 85, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "/Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/utils/loggers/__init__.py", line 62, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "/Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/utils/loggers/wandb/wandb_utils.py", line 174, in __init__
+    self.data_dict = check_wandb_dataset(opt.data)
+  File "/Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/utils/loggers/wandb/wandb_utils.py", line 51, in check_wandb_dataset
+    return check_dataset(data_file)
+  File "/Users/saazmahadkar/Desktop/Code/VEXAI_2021-2022/python/vex_detection/yolov5/utils/general.py", line 309, in check_dataset
+    raise Exception('Dataset not found.')
+Exception: Dataset not found.
