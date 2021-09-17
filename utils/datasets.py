@@ -2,7 +2,7 @@
 """
 Dataloaders and dataset utils
 """
-
+import cv2
 import glob
 import hashlib
 import json
@@ -16,7 +16,6 @@ from multiprocessing.pool import ThreadPool, Pool
 from pathlib import Path
 from threading import Thread
 
-import cv2
 import numpy as np
 import torch
 import torch.nn.functional as F
