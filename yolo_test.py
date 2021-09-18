@@ -7,10 +7,10 @@ import cv2
 import numpy as np
 import torch
 import torch.backends.cudnn as cudnn
+torch.set_default_tensor_type(torch.cuda.FloatTensor)
 import pyrealsense2 as rs
 FILE = Path(__file__).absolute()
 sys.path.append(FILE.parents[0].as_posix())  # add yolov5/ to path
-torch.set_default_tensor_type(torch.cuda.FloatTensor)
 
 from models.experimental import attempt_load
 from utils.datasets import LoadStreams, LoadImages
@@ -18,7 +18,7 @@ from utils.general import check_img_size, check_requirements, check_imshow, colo
     apply_classifier, scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path, save_one_box
 from utils.plots import Annotator, colors
 from utils.torch_utils import select_device, load_classifier, time_sync
-model = attempt_load("runs/train/exp9/weights/best.pt")
+model = attempt_load("best.pt")
 print("here")
 device = torch.device("cuda" if torch.cuda.is_available() else 'cpu')
 model.to(device)
@@ -32,8 +32,8 @@ try:
 	pipeline.start(config)
 	while True:
 		frames = pipeline.wait_for_frames()
-		depth = frames.get_depth_frame()
-		if not depth: continue
+		#depth = frames.get_depth_frame()
+		#if not depth: continue
 		color_frame = frames.get_color_frame()
 		if not color_frame: continue
 		img = np.array(color_frame.get_data())
@@ -47,7 +47,7 @@ try:
 			img = img[None]  # expand for batch dim
 		start = time.time()
 		pred = model(img)[0]
-		conf_thres = .01
+		conf_thres = .3
 		pred = non_max_suppression(pred, conf_thres)
 		print(time.time()-start)
 		for i, det in enumerate(pred):  # detections per image
@@ -57,13 +57,8 @@ try:
 			s += '%gx%g ' % img.shape[2:]  # print string
 			annotator = Annotator(im0, line_width=3, pil=not ascii)
 			if len(det):
-				# Rescale boxes from img_size to im0 size
-				det[:, :4] = scale_coords(img.shape[2:], det[:, :4], im0.shape).round()
+				det[:, :4] = scale_coords(img.shape[2:], det[:, :4], im0.shape).round() #Rescale boxes to original frame size
 
-				# Print results
-				for c in det[:, -1].unique():
-			    		n = (det[:, -1] == c).sum()  # detections per class
-			    		s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
 
 			# Write results
 			for *xyxy, conf, cls in reversed(det):
