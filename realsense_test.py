@@ -7,8 +7,9 @@ from models.experimental import attempt_load
 from utils.general import non_max_suppression, scale_coords
 from utils.plots import Annotator, colors
 import time
+from serial_test import Coms
 
-PATH = "yolov5s.pt"
+PATH = "best.pt"
 
 model = attempt_load(PATH)
 device = torch.device("cuda" if torch.cuda.is_available() else 'cpu')
@@ -23,7 +24,7 @@ config = rs.config()
 pipeline_wrapper = rs.pipeline_wrapper(pipeline)
 pipeline_profile = config.resolve(pipeline_wrapper)
 device = pipeline_profile.get_device()
-device_product_line = str(device.get_info(rs.camera_info.product_line))
+device_product_line       = str(device.get_info(rs.camera_info.product_line))
 
 found_rgb = False
 for s in device.sensors:
@@ -44,7 +45,12 @@ else:
 # Start streaming
 pipeline.start(config)
 
+def get_x_center(xyxy, frame_width=640):
+    half_frame = frame_width * .5
+    raw_value = (((xyxy[2] + xyxy[0]) / 2 - half_frame) / half_frame).item()
+    return float(format(raw_value, ".3f"))
 
+comm =  Coms()
 try:
     while True:
         start = time.time()
@@ -75,7 +81,24 @@ try:
         
         pred = model(color_image_t)[0]
         conf_thres = .3
+        # print(time.time()-start)
+        # start = time.time()
+        # print("after1")
         pred = non_max_suppression(pred, conf_thres)
+
+        # def checkForDetections(pred):
+        #         for _, det in enumerate(pred):
+        #                 if len(det):
+        #                         return True
+        #                 else:
+        #                         return False
+
+        # if not checkForDetections(pred):
+        #         continue
+
+        # print(time.time()-start)
+        # start = time.time()
+        # print("after2")
 
         color_image0, depth_colormap0 = color_image, depth_colormap
 
@@ -87,6 +110,9 @@ try:
                 det[:, :4] = scale_coords(color_image_t.shape[2:], det[:, :4], color_image0.shape).round() #Rescale boxes to original frame size
 
             for *xyxy, conf, cls in reversed(det):
+                comm.send("header", get_x_center(xyxy, frame_width=640))
+                print(c)
+                print(names[c])
                 c = int(cls)  # integer class
                 label = f'{names[c]} {conf:.2f}'
                 color_annotator.box_label(xyxy, label, color=colors(c, True))

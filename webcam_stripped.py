@@ -4,6 +4,7 @@ import argparse
 import sys
 import time
 from pathlib import Path
+import serial_test
 
 import cv2
 import numpy as np
@@ -50,7 +51,7 @@ def run(weights='yolov5s.pt',  # model
 	# Run inference
 	#if device.type != 'cpu':
 	#	model(torch.zeros(1, 3, *imgsz).to(device).type_as(next(model.parameters())))  # #run once
-
+	comm = serial_test.Coms()
 	try:
 		pipeline = rs.pipeline()
 		config = rs.config()
@@ -97,6 +98,7 @@ def run(weights='yolov5s.pt',  # model
 					c = int(cls)  # integer class
 					label = f'{names[c]} {conf:.2f}'
 					print('(' + str(int(xyxy[0])) + ',' + str(int(xyxy[1])) + ') - (' + str(int(xyxy[2])) + ',' + str(int(xyxy[3])) + ')')
+					comm.send("header", str((xyxy[0] + xyxy[2]) / 2) + str((xyxy[0] + xyxy[2]) / 2))
 					annotator.box_label(xyxy, label, color=colors(c, True))
 
 
